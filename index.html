@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <div class="bar"></div>
+          <h3>Quiz App</h3>
+          <div class="meter">
+            <div class="score">
+              <span>Puan: <b></b></span>
+            </div>
+            <div class="time">
+              <span>Süre: <b>10</b></span>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="question"></p>
+          <div class="options"></div>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary next_question">Sonraki Soru</button>
+          <button class="btn btn-primary btn-yeniden hidden" onclick="yenile()">
+            Yendiden Başla
+          </button>
+          <div class="soru_sayi">
+            <span class="anliksoru">1</span><span> / </span
+            ><span class="toplamsoru">4</span>
+          </div>
+        </div>
+      </div>
+      <div class="first-screen text-center show">
+        <div class="card-header">
+          <h3>Quiz App</h3>
+        </div>
+        <div class="card-body">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            debitis ducimus aperiam perferendis corporis. Quae delectus tenetur
+            perspiciatis sit architecto ratione dolores, et odio saepe ea
+            perferendis eum corrupti enim!
+          </p>
+        </div>
+        <button class="btn btn-danger m-2 start-button">Başla</button>
+      </div>
+    </div>
+    <script src="/quiz.js"></script>
+    <script src="/soru.js"></script>
+    <script src="/ui.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
